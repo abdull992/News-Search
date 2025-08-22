@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> News Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+</head>
+<body class="container bg-light">
+
+<h1 class="text-center text-success">Discover Latest News on <span id="searchTerm">...</span></h1>
+  <div class="container search-container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="input-group">
+          <input id="news" class="form-control form-control-lg" type="search" placeholder="Search for news..." aria-label="Search"/>
+          <button onclick="getNews()" class="btn btn-outline-success" type="submit">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br> 
+
+   <center>
+    <div class="row" id="getDiv"></div>
+  </center>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
